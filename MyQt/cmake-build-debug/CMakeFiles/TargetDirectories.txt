@@ -1,0 +1,5 @@
+D:/Qt/untitled/cmake-build-debug/CMakeFiles/untitled.dir
+D:/Qt/untitled/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Qt/untitled/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Qt/untitled/cmake-build-debug/CMakeFiles/untitled_autogen_timestamp_deps.dir
+D:/Qt/untitled/cmake-build-debug/CMakeFiles/untitled_autogen.dir

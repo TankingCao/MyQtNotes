@@ -1,0 +1,5 @@
+D:/Qt/MyQt/cmake-build-debug-qt/CMakeFiles/MyQt.dir
+D:/Qt/MyQt/cmake-build-debug-qt/CMakeFiles/edit_cache.dir
+D:/Qt/MyQt/cmake-build-debug-qt/CMakeFiles/rebuild_cache.dir
+D:/Qt/MyQt/cmake-build-debug-qt/CMakeFiles/MyQt_autogen_timestamp_deps.dir
+D:/Qt/MyQt/cmake-build-debug-qt/CMakeFiles/MyQt_autogen.dir
