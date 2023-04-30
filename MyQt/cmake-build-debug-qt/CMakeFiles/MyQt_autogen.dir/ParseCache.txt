@@ -2,3 +2,4 @@
 D:/Qt/MyQt/main.cpp
 D:/Qt/MyQt/myWidget.cpp
 D:/Qt/MyQt/myWidget.h
+D:/Qt/MyQt/MyPushButton.h

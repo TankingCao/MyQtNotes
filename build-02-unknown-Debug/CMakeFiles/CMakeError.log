@@ -1,0 +1,37 @@
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: D:/Qt/build-02-unknown-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/qt_setup/Tools/Ninja/ninja.exe cmTC_63bcb && [1/2] Building CXX object CMakeFiles/cmTC_63bcb.dir/src.cxx.obj
+[2/2] Linking CXX executable cmTC_63bcb.exe
+FAILED: cmTC_63bcb.exe 
+cmd.exe /C "cd . && D:\mingw64\bin\g++.exe -DQT_QML_DEBUG  CMakeFiles/cmTC_63bcb.dir/src.cxx.obj -o cmTC_63bcb.exe -Wl,--out-implib,libcmTC_63bcb.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+CMakeFiles/cmTC_63bcb.dir/src.cxx.obj:src.cxx:(.text+0x35): undefined reference to `pthread_create'
+CMakeFiles/cmTC_63bcb.dir/src.cxx.obj:src.cxx:(.text+0x41): undefined reference to `pthread_detach'
+CMakeFiles/cmTC_63bcb.dir/src.cxx.obj:src.cxx:(.text+0x4d): undefined reference to `pthread_cancel'
+CMakeFiles/cmTC_63bcb.dir/src.cxx.obj:src.cxx:(.text+0x5e): undefined reference to `pthread_join'
+CMakeFiles/cmTC_63bcb.dir/src.cxx.obj:src.cxx:(.text+0x68): undefined reference to `pthread_exit'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

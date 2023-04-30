@@ -1,5 +1,4 @@
-#include <QApplication>
-#include <QPushButton>
+#include "Qapplication.h"
 #include "myWidget.h"
 //argc命令行变量个数，argv命令行变量数组
 int main(int argc, char *argv[]) {

@@ -1,0 +1,12 @@
+# ninja log v5
+417	531	7045251754735501	CMakeFiles/MyQt.dir/MyQt_autogen/mocs_compilation.cpp.obj	4a6f3e40fd834528
+5	416	7045251751955489	MyQt_autogen/timestamp	4cb853d6073ba76d
+5	416	7045251751955489	MyQt_autogen/mocs_compilation.cpp	4cb853d6073ba76d
+5	416	7045251751955489	D:/Qt/MyQt/cmake-build-debug/MyQt_autogen/timestamp	4cb853d6073ba76d
+5	416	7045251751955489	D:/Qt/MyQt/cmake-build-debug/MyQt_autogen/mocs_compilation.cpp	4cb853d6073ba76d
+2308	2957	7045251774948610	MyQt.exe	cade741230540cdc
+429	2306	7045251772428626	CMakeFiles/MyQt.dir/main.cpp.obj	a08a8cd5d238b67b
+16	276	7045255992472086	MyQt_autogen/timestamp	4cb853d6073ba76d
+16	276	7045255992472086	MyQt_autogen/mocs_compilation.cpp	4cb853d6073ba76d
+16	276	7045255992472086	D:/Qt/MyQt/cmake-build-debug/MyQt_autogen/timestamp	4cb853d6073ba76d
+16	276	7045255992472086	D:/Qt/MyQt/cmake-build-debug/MyQt_autogen/mocs_compilation.cpp	4cb853d6073ba76d

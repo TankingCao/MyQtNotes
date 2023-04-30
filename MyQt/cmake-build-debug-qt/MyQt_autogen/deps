@@ -1,5 +1,6 @@
 MyQt_autogen/timestamp: \
 	D:/Qt/MyQt/CMakeLists.txt \
+	D:/Qt/MyQt/MyPushButton.h \
 	D:/Qt/MyQt/cmake-build-debug-qt/CMakeFiles/3.24.2/CMakeCCompiler.cmake \
 	D:/Qt/MyQt/cmake-build-debug-qt/CMakeFiles/3.24.2/CMakeCXXCompiler.cmake \
 	D:/Qt/MyQt/cmake-build-debug-qt/CMakeFiles/3.24.2/CMakeRCCompiler.cmake \

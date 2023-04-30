@@ -13,7 +13,7 @@ find_package(Qt6 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(MyQt main.cpp myWidget.h)
+add_executable(MyQt main.cpp myWidget.h MyPushButton.h)
 target_link_libraries(MyQt
         Qt::Core
         Qt::Gui

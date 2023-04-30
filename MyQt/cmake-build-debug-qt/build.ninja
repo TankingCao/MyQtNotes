@@ -133,7 +133,7 @@ build MyQt_autogen/timestamp MyQt_autogen/mocs_compilation.cpp | ${cmake_ninja_w
 #############################################
 # Phony custom command for CMakeFiles\MyQt_autogen_timestamp_deps
 
-build CMakeFiles/MyQt_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/MyQt_autogen_timestamp_deps: phony D$:/qt_setup/6.2.4/mingw_64/./bin/uic.exe D$:/qt_setup/6.2.4/mingw_64/./bin/moc.exe
+build CMakeFiles/MyQt_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/MyQt_autogen_timestamp_deps: phony D$:/qt_setup/6.2.4/mingw_64/./bin/moc.exe D$:/qt_setup/6.2.4/mingw_64/./bin/uic.exe
 
 
 #############################################
