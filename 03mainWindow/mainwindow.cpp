@@ -69,6 +69,9 @@ MainWindow::MainWindow(QWidget *parent)
     QTextEdit* edit = new QTextEdit(this);
     setCentralWidget(edit);
 
+    //set->只能有一个
+    //add->可以有多个
+
 }
 
 

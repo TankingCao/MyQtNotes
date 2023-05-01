@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/kun.gif</file>
+        <file>image/kun.jpg</file>
+        <file>image/video-display.ico</file>
+        <file>image/video-mp4.ico</file>
+        <file>image/Videos.ico</file>
+        <file>image/video-television.ico</file>
+        <file>image/Vivaldi.ico</file>
+        <file>image/Voice Record.ico</file>
+        <file>image/Voice Recorder.ico</file>
+        <file>image/VSCode.ico</file>
+        <file>image/Windows Defender.ico</file>
+        <file>image/Windows Store.ico</file>
+        <file>image/Windows To Go.ico</file>
+        <file>image/Windows Update.ico</file>
+    </qresource>
+</RCC>
