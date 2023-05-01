@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/audio-x-generic.ico</file>
+        <file>image/Edge Profile.ico</file>
+        <file>image/folder-games.ico</file>
+        <file>image/idea.ico</file>
+        <file>image/image-bmp.ico</file>
+        <file>image/image-x-generic.ico</file>
+        <file>image/java.ico</file>
+        <file>image/Python.svg</file>
+        <file>image/Sql Database Administrators.ico</file>
+        <file>image/video-mp4.ico</file>
+    </qresource>
+</RCC>
