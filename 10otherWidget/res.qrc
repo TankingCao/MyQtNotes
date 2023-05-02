@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>html.svg</file>
+        <file>kun.gif</file>
+    </qresource>
+</RCC>
