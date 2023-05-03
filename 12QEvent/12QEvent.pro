@@ -10,10 +10,11 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
+    mylabel.cpp \
     widget.cpp
 
 HEADERS += \
-    fcfs.h \
+    mylabel.h \
     widget.h
 
 FORMS += \

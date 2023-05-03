@@ -11,10 +11,8 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QHeaderView>
-#include <QtWidgets/QListWidget>
-#include <QtWidgets/QTableWidget>
-#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -22,27 +20,29 @@ QT_BEGIN_NAMESPACE
 class Ui_Widget
 {
 public:
-    QVBoxLayout *verticalLayout;
-    QListWidget *listWidget;
-    QTableWidget *tableWidget;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout;
+    QPushButton *pushButton;
+    QWidget *barWidget;
 
     void setupUi(QWidget *Widget)
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName(QString::fromUtf8("Widget"));
-        Widget->resize(800, 600);
-        verticalLayout = new QVBoxLayout(Widget);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        listWidget = new QListWidget(Widget);
-        listWidget->setObjectName(QString::fromUtf8("listWidget"));
+        Widget->resize(832, 630);
+        widget = new QWidget(Widget);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(0, 210, 102, 51));
+        horizontalLayout = new QHBoxLayout(widget);
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        pushButton = new QPushButton(widget);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
 
-        verticalLayout->addWidget(listWidget);
+        horizontalLayout->addWidget(pushButton);
 
-        tableWidget = new QTableWidget(Widget);
-        tableWidget->setObjectName(QString::fromUtf8("tableWidget"));
-
-        verticalLayout->addWidget(tableWidget);
-
+        barWidget = new QWidget(Widget);
+        barWidget->setObjectName(QString::fromUtf8("barWidget"));
+        barWidget->setGeometry(QRect(109, 19, 711, 601));
 
         retranslateUi(Widget);
 
@@ -52,6 +52,7 @@ public:
     void retranslateUi(QWidget *Widget)
     {
         Widget->setWindowTitle(QCoreApplication::translate("Widget", "Widget", nullptr));
+        pushButton->setText(QCoreApplication::translate("Widget", "\345\274\200\345\247\213", nullptr));
     } // retranslateUi
 
 };

@@ -11,38 +11,33 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QHeaderView>
-#include <QtWidgets/QListWidget>
-#include <QtWidgets/QTableWidget>
-#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
+#include <diy.h>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_Widget
 {
 public:
-    QVBoxLayout *verticalLayout;
-    QListWidget *listWidget;
-    QTableWidget *tableWidget;
+    DIY *diy1;
+    DIY *diy2;
+    QPushButton *pushButton;
 
     void setupUi(QWidget *Widget)
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName(QString::fromUtf8("Widget"));
         Widget->resize(800, 600);
-        verticalLayout = new QVBoxLayout(Widget);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        listWidget = new QListWidget(Widget);
-        listWidget->setObjectName(QString::fromUtf8("listWidget"));
-
-        verticalLayout->addWidget(listWidget);
-
-        tableWidget = new QTableWidget(Widget);
-        tableWidget->setObjectName(QString::fromUtf8("tableWidget"));
-
-        verticalLayout->addWidget(tableWidget);
-
+        diy1 = new DIY(Widget);
+        diy1->setObjectName(QString::fromUtf8("diy1"));
+        diy1->setGeometry(QRect(320, 210, 361, 41));
+        diy2 = new DIY(Widget);
+        diy2->setObjectName(QString::fromUtf8("diy2"));
+        diy2->setGeometry(QRect(320, 290, 361, 61));
+        pushButton = new QPushButton(Widget);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(170, 310, 92, 29));
 
         retranslateUi(Widget);
 
@@ -52,6 +47,7 @@ public:
     void retranslateUi(QWidget *Widget)
     {
         Widget->setWindowTitle(QCoreApplication::translate("Widget", "Widget", nullptr));
+        pushButton->setText(QCoreApplication::translate("Widget", "PushButton", nullptr));
     } // retranslateUi
 
 };

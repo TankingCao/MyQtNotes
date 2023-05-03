@@ -13,7 +13,7 @@ SOURCES += \
     widget.cpp
 
 HEADERS += \
-    fcfs.h \
+    Sort.h \
     widget.h
 
 FORMS += \
